@@ -1,0 +1,27 @@
+<style>
+    li{padding:20px;}
+    li{font-size:18px;}
+    body{margin:50px;}
+    *{font-family:sans-serif;}
+    a{color:blue}
+    
+</style>
+<h1>OT Web Control</h1>
+<ul>
+<li><a href=":82">Robot control</a>
+
+
+<script>
+document.addEventListener('click', function(event) {
+  var target = event.target;
+  if (target.tagName.toLowerCase() == 'a')
+  {
+      var port = target.getAttribute('href').match(/^:(\d+)(.*)/);
+      if (port)
+      {
+         target.href = window.location.origin;
+         target.port = port[1];
+      }
+  }
+}, false);
+</script>
