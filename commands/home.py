@@ -1,10 +1,10 @@
 import opentrons.execute
-logger = logging.Logger()
+import logging
+logger = logging.Logger("log")
 protocol = opentrons.execute.get_protocol_api('2.6')
 
 def main():
-    #protocol.home()
-    raise Exception
+    protocol.home()
     input("Protocol complete. Press enter to finish.")
 
 

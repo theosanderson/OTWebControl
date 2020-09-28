@@ -63,7 +63,7 @@ def item_chosen(button, choice):
 import os
 def launch_program(selected, button):
     global tocall
-    tocall = base_dir + "/" + selected
+    tocall = os.path.join(base_dir,"commands", selected)
     subprocess.call(["clear"])
     
     #subprocess.call(["sh -c '/bin/python {}; read;'".format(tocall)],)
@@ -85,6 +85,7 @@ top = urwid.Overlay(main, urwid.SolidFill(u'^'),
 
 
 urwid.MainLoop(top, palette=[('reversed', 'standout', '')]).run()
+print(tocall)
 subprocess.call(["python","{}".format(tocall)],env={'OT_SMOOTHIE_ID':"AMA","RUNNING_ON_PI":"1"})
 print("returned")
 
