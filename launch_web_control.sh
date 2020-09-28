@@ -1,1 +1,0 @@
-python /var/lib/jupyter/notebooks/OTWebControl/startup.py
