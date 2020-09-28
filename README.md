@@ -1,6 +1,6 @@
 OT Web Control makes it easy to launch and interact with custom Python protocols from an OT2 robot. These protocols can input data from the user, and react dynamically.
 
-
+<img src="otweb.png">
 
 At the time of writing, to use this tool you have to opt in to the [Alpha](https://support.opentrons.com/en/articles/3854833-opentrons-beta-software-releases) channel of OpenTrons to update your robot to have `screen`.
 
