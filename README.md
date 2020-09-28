@@ -1,15 +1,19 @@
-At the time of writing you have to opt in to the Alpha channel of OpenTrons to update your robot to one with `screen`.
+OT Web Control makes it easy to launch and interact with custom Python protocols from an OT2 robot. These protocols can input data from the user, and react dynamically.
+
+
+
+At the time of writing, to use this tool you have to opt in to the [Alpha](https://support.opentrons.com/en/articles/3854833-opentrons-beta-software-releases) channel of OpenTrons to update your robot to have `screen`.
 
 ## Installation
 
-Go to Jupyter notebook on the OT2. Create a terminal.
+Launch the Jupyter notebook of the OT2. Go to New -> Terminal to get a terminal open.
 
 Go to the notebooks directory:
 ```
 cd /var/lib/jupyter/notebooks/
 ```
 
-Get this package:
+Clone this repository:
 ```
 git clone https://github.com/theosanderson/OTWebControl
 ```
@@ -26,7 +30,7 @@ reboot
 
 ## Usage
 
-You should now be able to access a web server at `http://[YOUR ROBOT IP]`. If you click the Launch web control you should be presented with a menu of commands to run.
+You should now be able to access a basic web server at `http://[YOUR ROBOT IP]`. If you click the Launch web control you should be presented with a menu of commands to run (this is hosted at `http://[YOUR ROBOT IP]:82`).
 
 To add commands to this menu simply create python files in the `commands` directory. Anything you put in the `web` directory can be accessed at the web server.
 
