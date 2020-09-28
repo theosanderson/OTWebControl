@@ -12,7 +12,7 @@ base_dir =  "/var/lib/jupyter/notebooks/OTWebControl"
 os.chdir(base_dir)
 
 choices = os.listdir(base_dir+"/commands")
-choices = [x for x in choices]
+choices = [x for x in choices if x.endswith(".py")]
 tocall = ""
 import subprocess
 import re
