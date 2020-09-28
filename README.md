@@ -1,6 +1,4 @@
-At the time of writing you have to opt in to the Alpha channel of OpenTrons to get a version with `screen`.
-
-Then
+At the time of writing you have to opt in to the Alpha channel of OpenTrons to update your robot to one with `screen`.
 
 ## Installation
 
@@ -18,7 +16,7 @@ git clone https://github.com/theosanderson/OTWebControl
 
 Copy the launcher script to the boot-up directory:
 ```
-cp /var/lib/jupyter/notebooks/OTWebControl/launch_web_control.sh  /data/boot.d/
+cp /var/lib/jupyter/notebooks/OTWebControl/startup  /data/boot.d/
 ```
 
 Reboot:
