@@ -31,7 +31,7 @@ reboot
 
 ## Usage
 
-You should now be able to access a basic web server at `http://[YOUR ROBOT IP]`. If you click the Launch web control you should be presented with a menu of commands to run (this is hosted at `http://[YOUR ROBOT IP]:82`).
+You should now be able to access a basic web server at `http://[YOUR ROBOT IP]`. If you click `Launch web control` you should be presented with a menu of commands to run (this is hosted at `http://[YOUR ROBOT IP]:82`).
 
 To add commands to this menu simply create python files in the `commands` directory. These should follow the syntax for [Advanced Control](https://docs.opentrons.com/v2/new_advanced_running.html). Have a look at the `home.py` script for an example. The easiest way to edit these scripts is from the Jupyter browser (find the commands directory there). Anything you put in the `web` directory can be accessed at the web server, which could be for example a set of values from a digital scale, or images from the webcam.
 
