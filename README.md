@@ -5,7 +5,7 @@ OT Web Control makes it easy to launch and interact with custom Python protocols
 ## Installation
 
 
-At the time of writing, to use this tool you have to opt in to the [Alpha](https://support.opentrons.com/en/articles/3854833-opentrons-beta-software-releases) channel of OpenTrons to update your robot to have `screen` and other development tools. This should change as soon as this version is released as a Stable version.
+At the time of writing, to use this tool you have to opt in to the [Alpha](https://support.opentrons.com/en/articles/3854833-opentrons-beta-software-releases) channel of OpenTrons to update your robot to have `screen` and other development tools. This should change as soon as this version is released as a Stable version. Unless you are an advanced user you probably want to wait until that point.
 
 Launch the Jupyter notebook of the OT2. Go to New -> Terminal to get a terminal open.
 
